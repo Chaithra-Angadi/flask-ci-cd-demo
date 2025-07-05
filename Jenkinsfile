@@ -5,10 +5,10 @@ pipeline {
             steps { git 'https://github.com/Chaithra-Angadi/flask-ci-cd-demo.git' }
         }
         stage('Build') {
-            steps { sh 'docker build -t flask-demo ./app' }
+            steps { sh 'sh 'docker build -t flask-demo .' }
         }
         stage('Test') {
-            steps {
+            steps {s
                 sh 'pip install pytest'
                 sh 'pytest tests'
             }
