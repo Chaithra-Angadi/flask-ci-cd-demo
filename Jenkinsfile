@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Clone') {
-            steps { git 'https://github.com/your-username/flask-ci-cd-demo.git' }
+            steps { git 'https://github.com/Chaithra-Angadi/flask-ci-cd-demo.git' }
         }
         stage('Build') {
             steps { sh 'docker build -t flask-demo ./app' }
