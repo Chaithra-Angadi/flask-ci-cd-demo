@@ -8,7 +8,7 @@ pipeline {
             steps { sh  'docker build -t flask-demo .' }
         }
         stage('Test') {
-            steps {s
+            steps {
                 sh 'pip install pytest'
                 sh 'pytest tests'
             }
