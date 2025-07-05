@@ -1,0 +1,12 @@
+# Ignore parent directory files (if your repo is mis-scoped)
+../*
+
+# Ignore common noise
+__pycache__/
+*.log
+*.tmp
+*.bak
+*.ipynb_checkpoints/
+.vscode/
+.env
+.DS_Store
